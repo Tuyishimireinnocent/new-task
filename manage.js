@@ -33,7 +33,7 @@ const displayContact = () =>{
                     <td>${contact.name}</td>
                     <td>${contact.email}</td>
                     <td class="actions">
-                        <button class="edit">Edit</button>
+                        <button class="edit" onclick = "editContacts(event,${index})">Edit</button>
                         <button class="delete" onclick = "deleteContact(event,${index})">Delete</button>
                     </td>
                 </tr>`
@@ -49,6 +49,46 @@ function deleteContact(e,index){
     displayContact()   
 }
 
+function editContacts(e,index){
+    const editForm = document.querySelector('.Edit-input')
+    editForm.style.display = 'block'
+
+    contacts = JSON.parse(localStorage.getItem("contacts")) 
+    const editName = document.querySelector("#editName")
+    const editEmail = document.querySelector("#editEmail")
+    editName.value = contacts[index].name
+    editEmail.value = contacts[index].email
+
+    const saveChanges = document.querySelector(".saveChanges");
+
+    function handleEdit(){
+        const nameValue = editName.value.trim()
+        const emailValue = editEmail.value.trim()
+    
+        if(!nameValue || !emailValue){
+            alert("please fill   All Input")
+            return
+        }
+    
+        contacts[index].name = nameValue 
+        contacts[index].email = emailValue
+        editForm.style.display = 'none'
+        saveContact()
+        displayContact()
+        saveChanges.removeEventListener("click",handleEdit)
+    }
+
+    saveChanges.addEventListener("click",handleEdit)
+}
+
+
+
+
+
+
+
+
+document.editContacts = editContacts
 document.deleteContact = deleteContact
 displayContact()
 

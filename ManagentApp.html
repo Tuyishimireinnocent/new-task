@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Management.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManagementApp</title>
+</head>
+<body>
+    <div class="App-container">
+        <div class="header">
+            <h1>Contact Management App</h1>
+        </div>
+        <div class="form-container">
+            <div class="Add-input">
+                <h3>Add Contact</h3>
+                <label for="">Name</label><br>
+                <input type="text" name="Name" id="Name" placeholder="Enter Name"><br>
+                <label for="">Email</label><br>
+                <input type="email" name="Email" id="Email" placeholder="Enter email"><br>
+                <button type="submit" class="add_contact">Add Contact</button>
+            </div>
+
+            <div class="Edit-input">
+                <h3>Edit Contact</h3>
+                <label for="">Name</label><br>
+                <input type="text" placeholder="Enter Name"><br>
+                <label for="">Email</label><br>
+                <input type="email" placeholder="Enter email"><br>
+                <button>Save Changes</button>
+            </div>
+        </div>
+    </div><br><br>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="c-table">
+                <tr>
+                    <td>Chaba</td>
+                    <td>Chaba boi@gmail.com</td>
+                    <td class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+   <script src="manage.js"></script>
+</body>
+</html>

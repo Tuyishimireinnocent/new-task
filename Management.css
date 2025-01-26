@@ -1,0 +1,134 @@
+body {
+    font-family: Arial;
+    background-color: #f5f5f5;
+    
+    display: fl
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+  }
+.App-container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.form-container{
+   display: flex;
+   justify-content: space-around;
+   height: 198px;
+   margin: 20px;
+   
+
+}
+.header{
+    width: 100%;
+    height: auto;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    border-radius: 10px;
+    text-align: center;
+    color: #f5f5f5;
+    
+    
+}
+.Add-input{
+   width: 40%;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   height: auto;
+   
+  
+  
+
+}
+.Add-input label{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+
+.Add-input input{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+}
+.Add-input button{
+    height: 13%;
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f5f5f5;
+    background-color: #007bff
+}
+.Edit-input{
+    width: 40%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+    
+}
+.Edit-input label{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.Edit-input button{
+    height: 13%;
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f5f5f5;
+    background-color:#007bff
+}
+.Edit-input button{
+    height: 13%;
+    margin: 10px;
+    width: 23%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f5f5f5;
+    background-color:#007bff
+}
+.Edit-input input{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+}
+table {
+    margin: 20px;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.actions button {
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+
+.edit {
+    background-color: #ffc107;
+}
+
+.delete {
+    background-color: #dc3545; 
+}
+
+.actions button:hover {
+    opacity: 0.8;
+}
